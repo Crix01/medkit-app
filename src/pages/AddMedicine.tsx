@@ -7,7 +7,7 @@ export default function AddMedicine() {
       <Stack spacing={2} sx={{ maxWidth: 400 }}>
         <TextField label="Название" fullWidth />
         <TextField label="Количество" type="number" fullWidth />
-        <TextField label="Годен до" type="date" fullWidth InputLabelProps={{ shrink: true }} />
+        <TextField label="Годен до" type="date" fullWidth slotProps={{ inputLabel: { shrink: true } }} />
         <Button variant="contained">Сохранить</Button>
       </Stack>
     </Container>
